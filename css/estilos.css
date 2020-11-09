@@ -18,6 +18,9 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+nav .brand {
+    margin-left: 20px;
+}
 
 nav ul{
     display: flex;
@@ -32,8 +35,33 @@ nav li a {
     color: black;
     text-decoration: none;
 }
+nav  li a:hover {
+    text-decoration: none;
+    color: white;
+}
 
-nav li a:hover{
-color: white;
+/* -------------------- Main section */
 
+.main_section{
+
+    padding: 10%;
+    text-align: center ;
+}
+.products {
+
+    background-image: url("../image/curve.png");
+    height: 500px;
+    background-size: cover;
+    background-position: center top; 
+    padding: 15%;
+    display: flex;
+} 
+
+.product{
+    padding: 10px;
+}
+
+.product .contect{ 
+    background-color: white;
+    padding: 20px;
 }
