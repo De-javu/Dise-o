@@ -1,5 +1,25 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+/* --------------------------Variables */
+:root {
+ 
+    --green-color:#7ACC2D;
+    --white-color:white;
+    --black-color:#313337;
+    
+    /* Tipografia */
+    --normal:12px;
+    /* Espacio */
+    --space:10px;
+    /* Box shadow */
+    --box:0px 0 2px 1px #e6e5e9;
+
+}
+
+/* --------------------------Variables */
+
 
 
 html,body{
@@ -7,13 +27,13 @@ html,body{
     padding: 0px; 
     margin: 0px;
     font-size: 12px;
-    font-family: Helvetica;
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav{
     display: flex;
-    background-color: #7ACC2D;
-    padding: 10px;
+    background-color: var(--green-color) ;
+    padding:var(--space);
     color: white;
     justify-content: space-between;
     align-items: center;
@@ -32,7 +52,7 @@ nav li{
 }
 
 nav li a {
-    color: black;
+    color: var(--black-color);
     text-decoration: none;
 }
 nav  li a:hover {
@@ -50,7 +70,7 @@ nav  li a:hover {
 .products {
 
     background-image: url("../image/curve.png");
-    height: 500px;
+    max-height: 50px;
     background-size: cover;
     background-position: center top; 
     padding: 15%;
@@ -59,9 +79,29 @@ nav  li a:hover {
 
 .product{
     padding: 10px;
+    margin-top: -200px;
 }
 
-.product .contect{ 
+.product .content{ 
     background-color: white;
     padding: 20px;
+    box-shadow:var(--box);
+}
+
+.img_content{
+    text-align: center;
+}
+.main_button{
+    background-color:var(--green-color);
+    width: 100%;
+    padding:var(--space);
+    font-size:var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover{
+    background-color: #5f9230;
 }
