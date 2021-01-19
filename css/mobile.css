@@ -1,0 +1,35 @@
+
+/* condicionamos el comportamiento en este caso a los 600px */
+@media (max-width: 600px) {
+
+ .products {
+
+     /* toma un valos calculado para justarce, pero depende de la
+     configuracion de elemento padre */
+     display:inherit;
+
+     /* Realiza y calcula el ajuste de la altura  */
+     height: auto;
+ }
+ .product {
+    
+    /* Nos permite  que se respete la margen de
+    cada producto, sin que quede montado un encima del otro */
+    margin-top: auto; 
+    
+    }
+
+ .main_section {
+
+    /* La utilizamos para reducuir el paddin, ya que esta muy grande */
+     padding: 4%;
+ }
+
+ .beneficios, .menciones {
+
+    display: inherit;
+
+    height: auto;
+ }
+
+}

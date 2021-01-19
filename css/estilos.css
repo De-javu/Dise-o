@@ -1,107 +1,260 @@
 
-
+/* Este es link que sacamos de la pagina de 
+google fonts para el diseño de letra que deseamos  */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
-/* --------------------------Variables */
+/* --------Variables----------- */
+/* --Aca ponemos tods la variables que son muy repetitivas----------- */
+/* -----Es una forma de volverlas dinamicas----------- */
 :root {
  
     --green-color:#7ACC2D;
-    --white-color:white;
+    --white-color:rgb(245, 244, 244);
     --black-color:#313337;
     
     /* Tipografia */
-    --normal:12px;
+    --normal:20px;
     /* Espacio */
     --space:10px;
     /* Box shadow */
-    --box:0px 0 2px 1px #e6e5e9;
+    --box:0px 0 2px 1px #e9e6e5;
 
 }
 
-/* --------------------------Variables */
+/* ------Variables------------- */
 
 
 
 html,body{
+    /* Padding = Espaciado que se tiene hacia dentro */
+    padding: 0px;
 
-    padding: 0px; 
+    /* Espaciado que elementi tiene hacia afuera */
     margin: 0px;
+
+    /* Es tipo de letra y tamaño que vamos a utiizar */
     font-size: 12px;
+
+    /* font-family = Con esta funcion ponemos el estilo de letra que se desea
+    copiando esa nombre desde google fonts*/
     font-family: 'Open Sans', sans-serif;
 }
 
+/***** Aca empeizan los estilos de nav *********/
 nav{
+
+    /*nos ayuda aque los enlaces se pongan uno al lado del otro y no debajo */
     display: flex;
+
+    /*generamos el color del nav */
     background-color: var(--green-color) ;
+   
+    /*el espacio con la variable dimamica que creamos  */
     padding:var(--space);
+    
+    /*El color que se va usar dentro del nav */
     color: white;
+
+    /*toma los elementos por grupos y los pone 
+    acada uno en un extremo, imagen a un lado elaces al otro */
     justify-content: space-between;
+
+    /*center= con esta funcion centramos todo en el nav */
     align-items: center;
 }
 nav .brand {
     margin-left: 20px;
 }
-
+ 
+/* utilizamos otras etiquetas en html que nos permitieran crear efectos solo 
+a la partqe quenecesitamosdentro el foumulario  */
 nav ul{
     display: flex;
 }
 
+
+/* utilizamos otras etiquetas en html que nos permitieran crear efectos solo 
+a la partqe quenecesitamosdentro el foumulario  */
 nav li{
     padding-left: 20px;
+
+    /* list-style: none;= utilizamos para quitar la pepa de lista */
     list-style: none;
 }
 
+
+/* ahora vamos a trabajar en los estilos de los link de las listas */
 nav li a {
+
+    /* color:= manejamos el color de los hipervinculos  */
     color: var(--black-color);
+    
+    /* text-decoration: none;= utilizamos para quitar las decoraciones de lista  */
     text-decoration: none;
 }
+
+/* Ahora vamos a trabajar en las acciones que queremos que tengan los 
+enlaces como un efecto de boton  */
 nav  li a:hover {
+
     text-decoration: none;
+
+    /* color que queremos a la hora de pararnos sobre los link */
     color: white;
 }
 
-/* -------------------- Main section */
+/* ------- Main section ------- */
 
 .main_section{
 
     padding: 10%;
+
     text-align: center ;
 }
+
+
 .products {
-
+    /*con esta funcion llamamos imagenes desde css */
     background-image: url("../image/curve.png");
-    max-height: 50px;
+
+    /*la utilizamos para la altura */
+    height: 50px;
+
+    /*utilizar el tamaño que tiene disponible */
     background-size: cover;
+
+    /* Se Alinea hacia el centro pero hacia arriba  */
     background-position: center top; 
+
+
     padding: 15%;
-    display: flex;
+    display: flex; 
 } 
-
+ /* para manejar los productos en general */
 .product{
-    padding: 10px;
-    margin-top: -200px;
-}
 
+
+    padding: 10px;
+
+    /* Esta funcion nos permite subir o bajar el elemento  */
+    margin-top: -200px;
+
+}
+/* Para manejar un solo producto */
 .product .content{ 
     background-color: white;
     padding: 20px;
+
+    /*nos pemite generar sombra sobre los elementos  */
     box-shadow:var(--box);
 }
 
 .img_content{
     text-align: center;
 }
+
+/* Creamso la clase de main button */
 .main_button{
+
+
     background-color:var(--green-color);
+
+    /* Para que ocupe todo el espacio de la tarjeta */
     width: 100%;
+
     padding:var(--space);
     font-size:var(--normal);
     color: var(--white-color);
     border: 0;
+
+    /* con esta funcion hacemos que el cursor se vulva una manita  */
     cursor: pointer;
+
+    /* Crea el efecto de que el boton para que el boton se vea salido */
     border-radius: 2px;
 }
-
+ /* De esta forma se crea el efecto de
+ interaccion cuando se pasa sobre el boton */
 .main_button:hover{
+
+
     background-color: #5f9230;
 }
+
+
+.beneficios {
+
+    text-align: center ;
+
+    padding: 10%;
+    display: flex;
+} 
+
+.beneficios{
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    }
+
+.content_beneficio {
+ 
+    text-align: center;
+    padding: 30px;
+    }
+
+.content_beneficio{
+        text-align: center;
+
+}
+
+.Menciones {
+
+    text-align: center;
+}
+
+
+
+.menciones {
+
+
+        text-align: center ;
+        align-items: center;
+    
+        padding: 10%;
+        display: flex;
+        background-color: white;
+    
+    text-align: center;
+    padding: 10px;
+    
+    }
+
+
+.mencion {
+    
+
+     display: flex;
+      align-items: center;
+    
+
+    }
+
+.content_mencion{
+ 
+   background-color: var(--white-color);
+    padding: 20px;
+    
+    text-align: center;
+
+
+    }
+
+.footer {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 020px;
+ }

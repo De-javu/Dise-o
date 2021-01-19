@@ -1,25 +1,47 @@
 <!DOCTYPE html>
-<html lang="es">
+
+<!-- Se utiliza para que sea en español -->
+<html lang="es"> 
+
+<!-- Representa la conexion de metadatos -->
 <head>
+ <!-- meta UTF-8 codifica el texto que ulizamos  -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Por medio de esta linea se configura el CCS para trabajar con html
+  las diferentes configuracion que se realicen por medio de tecnoligia css -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/estilos.css">
+  <link rel="stylesheet" href="css/mobile.css">
+  <!-- Define el titulo del documento -->
   <title>Bruno</title>
+
+
 </head>
+
+<!-- body representa el contenido principal de documento html -->
 <body>
   
    
-  <!-- aqui empieza el naver -->
-<header>   
+  <!-- aqui empieza el naver****************************** -->
+<header>  
+  
+  <!-- la etiqueta nav Define una sección que solamente contiene enlaces de navegación -->
     <nav>
       <div class="brand_image">
+
+        <!-- con esta etiqueta poneos las imagenes  -->
         <img src="image/logo.jpg" alt="" width="50">
+
       </div>
 
       <div class="nav_option">
-
+ 
+          <!-- ul y li = son formatos que utilizamos hacer lista         -->
           <ul>
+            <!-- La etiequeta a es donde vamos aponer los hiperlink que nos van adireccionar donde queremos -->
             <li><a href="#">Faqs</a></li>
              <li><a href="#">Productos y descriptiones</a></li>  
           </ul>
@@ -28,22 +50,39 @@
       
     </nav>
   <!-- aqui acaba el naver  -->
+
+   <!-- Aca creamos la seccion del mai section -->
    <div class="main_section">
+
+     <!-- hi= Lo utilizamos para la creacion del titulo principal -->
      <h1>Esto es un producto increible, ya lo puedes optener </h1>
-   </div>
+   
+   
+    </div>
    <div class="products">
      <div class="product">
        <div class="content">
+
+                   <!-- Para poder manipular las tarjetas utilizamos el contenerdor img_content -->
                   <div class="img_content">
 
+
+                  <!-- La etiqueta img nos pormite poner imagenes en nuestro sitio web -->
                     <img src="image/box1.png" alt="">
                   </div>
                    
+                  <!-- titulos pricipales -->
                   <h1>producto 1</h1>
+
+                  <!-- La etiqueta de p la utilizamos para los parrafos -->
                   <p>Miles de productos ahi en el mercado,
                    pero nada como una caja de gatitos
                   </p>
+
+                  <!-- Esta esla etiqueta que utilizamos para poner los botones -->
                    <button href="#" class="main_button">LO QUIERO</button>
+
+                   
             </div>
           </div>
              <div class="product">
@@ -62,13 +101,13 @@
        </div>
      </div>
    </div>
-
- <div class="beneficios">
+ <!-- aca se empiezan los beneficios  -->
+  <div class="beneficios">
          <div class="beneficio">
            <div class="content_beneficio">
              <img src="image/b1.png" alt="">
              <h3>Los más suavecitos</h3>
-             <p class="text_beneficio">
+             <p>
                En el mercado hay miles de productos,
                 pero ninguno como los nuestros.
              </p>
@@ -79,7 +118,7 @@
             <div class="content_beneficio">
               <img src="image/b2.png" alt="">
               <h3>Los más increible</h3>
-              <p class="text_beneficio">
+              <p>
                 En el mercado hay miles de productos,
                  pero ninguno como los nuestros.
               </p>
@@ -90,17 +129,79 @@
               <div class="content_beneficio">
                 <img src="image/b3.png" alt="">
                 <h3>Los más confiable</h3>
-                <p class="text_beneficio">
+                <p>
                   En el mercado hay miles de productos,
                    pero ninguno como los nuestros.
                 </p>
               </div>
             </div>
-       </div>```
+          </div>
+        </div>
+      </div>
+    
+        
+  <!-- MENCIONES -->
+    
+       <div class="Menciones">
+        <h1>Menciones</h1>
+       </div>
+          
+       <div class="menciones">
+           
+           <div class="mencion">
+          <div class="content_mencion">
+            <img src="image/p1.png" alt="">
+            <h3>MARIO</h3>
+            <p>
+              En el mercado hay miles de productos,pero ninguno como los nuestros
+            </p>
+          </div>
+        </div>
+        <div class="menciones">
+          <div class="mencion">
+            <div class="content_mencion">
+              <img src="image/p2.png" alt="">
+              <h3>MARIA</h3>
+              <p>
+                En el mercado hay miles de productos,
+                     pero ninguno como los nuestros
+              </p>
+            </div>
+          </div>
+          <div class="menciones">
+            <div class="mencion">
+              <div class="content_mencion">
+                <img src="image/p3.png" alt="">
+                <h3>JOE</h3>
+                <p>
+                  En el mercado hay miles de productos,
+                       pero ninguno como los nuestros
+                </p>
+              </div>
+            </div>
+            <div class="menciones">
+              <div class="mencion">
+                <div class="content_mencion">
+                  <img src="image/p4.png" alt="">
+                  <h3>JAMAICA</h3>
+                  <p>
+                    En el mercado hay miles de productos,
+                         pero ninguno como los nuestros
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-
-
-
+    
+      <footer class="footer">
+        <p>Términos y condiciones</p>
+        <p>contacto@gmail.com</p>
+      </footer>
+    
+ <!-- Esta etiqueta se utiliza para que javascript funcione en html -->
  <script scr="script/script.js"></script>
 
 </body>
