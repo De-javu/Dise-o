@@ -1,0 +1,84 @@
+
+
+
+/* Empezamos con una clase
+* Luego fijamos el tiempo que dura la animacion */
+.fadeIn{
+
+ /* asegura que los valores sean estandar */
+    -webkit-animation-duration: 4s;
+    animation-duration: 4s;
+
+    /* Define que se cumplira de ida del regreso regreso */
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+
+    /* fijamos el nombre de nuestra animacion */
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+/* Se define que animacion va a tener esta clase*/
+@keyframes fadeIn {
+
+    /* Idicamos como se maneja la opacidad */  
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+
+}
+/* Aca realizamos la animacion de nav, utilizando los mismos parametros
+* que se tomaron en la parte inicial, solo cambia el nomre de la clase*/
+.fadeInDown {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+
+}
+
+@keyframes fadeInDown {
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,-100%,0);  
+        transform: translate3d(0,-100%,0);
+    }
+
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
+
+
+/*En esta seccion utilizamos los efectos de animacion
+* para los produtos*/
+
+.fadeInUp {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    -webkit-animation-fill-mode: both;
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+
+}
+
+@keyframes fadeInUp {
+    from{
+        opacity: 0;
+        -webkit-transform: translate3d(0,100%,0);  
+        transform: translate3d(0,100%,0);
+    }
+
+    to{
+        opacity: 1;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+    }
+}
