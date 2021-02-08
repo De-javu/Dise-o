@@ -153,7 +153,7 @@ nav  li a:hover {
     text-align: center;
 }
 
-/* Creamso la clase de main button */
+  /**********-------------main boutum------************** */
 .main_button{
 
 
@@ -248,6 +248,25 @@ nav  li a:hover {
 
 
     }
+      
+    /**********-------------venta------************** */
+
+    .modulo_pago {
+        background-color: var(--white-color);
+        box-shadow: var(--box);
+        padding: var(--space);
+    }
+
+    .modulo_pago_images{
+        max-width:150px;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+    }
+
+
+
+    /**********-------------footer------************** */
 
 .footer {
         height: 50px;
