@@ -296,4 +296,9 @@ nav  li a:hover {
         background-color: black;
         color: white;
         padding: 020px;
+    
+ }
+
+ .footer a {
+     color:var(--green-color);
  }
