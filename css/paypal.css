@@ -4,8 +4,12 @@ background-color: var(--black-color);
 text-align: center;
 color: var(--white-color);
 display: flex;
+
+
 justify-content: center;
 align-items: center;
+
+/* con esta funcion logramos hacer que se tome todo el tamaño de la pantalla y se pueda centrar por completo  */
 height: 100vh;
 }
 

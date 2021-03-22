@@ -39,7 +39,8 @@ html,body{
     copiando esa nombre desde google fonts*/
     font-family: 'Open Sans', sans-serif;
 }
-
+  /* la eqtiqueta label nos permite regular el tamaño de letra para que sea igual por eso la ubicamos 
+  en este campo ya que no es una clase es un elemneto  */
 p, label{
     font-size: var(--normal);
 
@@ -270,11 +271,20 @@ nav  li a:hover {
     }
 
     .data {
-
+   
+    /* sirve para que los elemntos se suban un poco */
     margin-top: var(--space);
+
+
      width: 100%;
+
+     /* para que la altura de los cuadros del formulario sea de 35px */
      height: 35px;
+
+     /* para las esquinas redondeadas  */
      border-radius: 2px;
+
+     /* Este borde definimos 1pxd enacho y lo definimos como solido y aplicamos color negro en el borde */
      border: 1px solid var(--black-color);
      box-sizing: border-box;
 
